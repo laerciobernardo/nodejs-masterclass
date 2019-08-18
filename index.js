@@ -2,9 +2,11 @@
 const http = require('http');
 const url = require('url');
 const StringDecoder = require('string_decoder').StringDecoder;
+const config = require('./config');
 
 //The server should respond to all request with a string
 const server = http.createServer(function(req, res){
+
 
    //Get the URL and parse it
    const parsedUrl = url.parse(req.url, true);
@@ -63,13 +65,12 @@ const server = http.createServer(function(req, res){
          //Log the request path
          console.log("Returning this response: ",statusCode, payloadString);
       })
-
    })
 });
 
 //Start the server, and have it listen on port 3000
-server.listen(3000, function(){
-   console.log('The server is listening on port 3000');
+server.listen(config.port, function(){
+   console.log(`The server is listening on port ${config.port} in ${config.envName} mode`);
 });
 
 //Define the handlers
