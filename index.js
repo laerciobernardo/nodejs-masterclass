@@ -106,9 +106,14 @@ handlers.notFound = function(data, callback){
 //Ping handler
 handlers.ping = function(data, callback){
    callback(200);
-}
+};
+
+handlers.hello = function(data, callback){
+   callback(200, {message: 'This hello route is working very well!'});
+};
 
 //Define a request router
 let router = {
-   'ping': handlers.ping
+   'ping': handlers.ping,
+   'hello': handlers.hello
 }
