@@ -7,6 +7,13 @@ const config = require('./config');
 const fs = require('fs');
 const _data = require('./lib/data.js');
 
+
+//Test
+//@TODO: delete this
+//
+_data.read('test','newFile', function(err, data){
+   console.log("There a new error ", err, 'and this is the data ', data);
+});
 //Instantiate the HTTP server
 const httpServer = http.createServer(function(req, res){
    unifiedServer(req, res);
