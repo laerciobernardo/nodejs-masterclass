@@ -1,6 +1,4 @@
 # nodejs-masterclass
 Pirple NodeJS Masterclass homework 1
 
-- Click on the image to full screen
-
-<a href="https://i.giphy.com/media/h7vP04ACOaUNNgYNqN/source.gif"><img src="https://media.giphy.com/media/llmaFuq0L9JhJ2nFp5/giphy.gif" alt="Click to full screen" /></a>
+![screencast](https://user-images.githubusercontent.com/912715/63637145-73430980-c64f-11e9-833c-e7c1ac391dd6.gif)
