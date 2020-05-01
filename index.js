@@ -102,5 +102,6 @@ const unifiedServer = function(req, res){
 let router = {
    '': handlers.welcome,
    'users': handlers.users,
-   'tokens': handlers.tokens
+   'login': handlers.login,
+   'logout': handlers.logout
 }
