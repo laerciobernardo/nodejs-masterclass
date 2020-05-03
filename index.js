@@ -105,5 +105,5 @@ let router = {
    'login': handlers.login,
    'logout': handlers.logout,
    'menu': handlers.menu,
-   'cart': handlers.cart
+   'carts': handlers.carts
 }
